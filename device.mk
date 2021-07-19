@@ -22,6 +22,10 @@ $(call inherit-product, device/xiaomi/mt6768-common/mt6768-common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/merlin/merlin-vendor.mk)
 
+# CameraGo
+PRODUCT_PACKAGES += \
+    CameraGo
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
@@ -46,5 +50,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop \
     $(DEVICE_PATH)/configs/sku_props/build_dsds_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_dsds_vendor.prop
-
-
