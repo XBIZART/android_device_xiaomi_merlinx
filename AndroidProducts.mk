@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/aosp_merlin.mk
+   $(LOCAL_DIR)/bianca_merlin.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_merlin-user \
-    aosp_merlin-userdebug \
-    aosp_merlin-eng
+    bianca_merlin-user \
+    bianca_merlin-userdebug \
+    bianca_merlin-eng
